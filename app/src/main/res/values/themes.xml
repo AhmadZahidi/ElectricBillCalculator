@@ -3,6 +3,12 @@
     <style name="Base.Theme.ElectricBillCalculator" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
     </style>
 
     <style name="Theme.ElectricBillCalculator" parent="Base.Theme.ElectricBillCalculator" />
