@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1066649734666",
+    "firebase_url": "https://electricbillcalculator-3e3a4-default-rtdb.firebaseio.com/",
+    "project_id": "electricbillcalculator-3e3a4",
+    "storage_bucket": "electricbillcalculator-3e3a4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066649734666:android:5d8967cd4e0232eea919f3",
+        "android_client_info": {
+          "package_name": "com.example.electricbillcalculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7ijMHgK1cN7E8qPPPB5wqXmL6Z5C1E9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
