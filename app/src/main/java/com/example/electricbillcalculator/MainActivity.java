@@ -85,8 +85,11 @@ public class MainActivity extends AppCompatActivity {
                     totalCharges = 43.6 + 33.4 + 154.8 + ((Kwh - 600) * 0.546);
                 }
 
+                totalCharges=totalCharges-(totalCharges*Rebate/100);
+
                 // Display the result
-                txtOutput.setText(Double.toString(totalCharges));
+                txtOutput.setText(String.format("RM %.2f", totalCharges));
+
             }
         });
 
@@ -94,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txtOutput.setText("0.0");
+                txtOutput.setText("RM 0.0");
                 editKwh.setText("");
                 editRebate.setText("");
             }
