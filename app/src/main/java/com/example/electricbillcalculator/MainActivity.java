@@ -1,6 +1,7 @@
 package com.example.electricbillcalculator;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -154,10 +155,15 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int selected = item.getItemId();
 
-        if (selected == R.id.menuAbout) {
-            Toast.makeText(this, "About clicked", Toast.LENGTH_SHORT).show();
+        if (selected == R.id.menuHome) {
+            Intent homeIntent = new Intent(this, MainActivity.class);
+            homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(homeIntent);
+            Toast.makeText(this, "Home clicked", Toast.LENGTH_SHORT).show();
             return true;
-        } else if (selected == R.id.menuSettings) {
+        } else if (selected == R.id.menuAbout) {
+            Intent aboutIntent = new Intent(this, AboutActivity.class);
+            startActivity(aboutIntent);
             Toast.makeText(this, "Settings clicked", Toast.LENGTH_SHORT).show();
             return true;
         }
